@@ -18,3 +18,7 @@ body {
 a {
   color: #8a4d4d;
 }
+
+a:hover {
+  color: rgb(95, 94, 94);
+}

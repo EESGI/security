@@ -55,7 +55,7 @@
   <!-- Content section -->
   <section class="py-5">
     <div class="container">
-    <cms:editable name='main_content' type='richtext'>
+    <cms:editable name='second_content' type='richtext'>
       <h1>Incorporated</h1>
       <p class="lead">E&E Electronic Engineering Research is proud to be a part of EE Systems Group, Inc. All EESGI products are designed with green in mind. We are very proud to offer a wide selection of solar-powered or energy-efficient AC-powered products to suit your security and safety needs.</p></cms:editable>
     </div>
@@ -70,7 +70,7 @@
     <!-- Content section -->
     <section class="py-5">
       <div class="container">
-      <cms:editable name='main_content' type='richtext'>
+      <cms:editable name='third_content' type='richtext'>
         <h1>Installation</h1>
         <p class="lead">If you are in the following counties in Southern California, please contact us for residental or industrial installation price quote:<br>
           <div style="padding-left: 3rem">

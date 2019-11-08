@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><cms:get_custom_field 'site_title' masterpage='globals.php' /></title>
+    <title><cms:get_custom_field 'sec_title' masterpage='globals.php' /></title>
     <link rel="icon" href="<cms:get_custom_field 'seclogo' masterpage='globals.php' />">
 
     <link href="http://ee-security.com/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

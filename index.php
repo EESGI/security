@@ -11,7 +11,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title><cms:get_custom_field 'site_title' masterpage='globals.php' /></title>
+  <title><cms:get_custom_field 'sec_title' masterpage='globals.php' /></title>
 
   <link rel="icon" href="<cms:get_custom_field 'seclogo' masterpage='globals.php' />">
 

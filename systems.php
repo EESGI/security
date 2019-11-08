@@ -1,3 +1,6 @@
+<?php require_once( '../development/cms.php' ); ?>
+<cms:template title='Sec Systems' order='22' />
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,51 +8,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>E&E Electronic Engineering Research, Inc</title>
+    <title><cms:get_custom_field 'site_title' masterpage='globals.php' /></title>
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="<cms:get_custom_field 'logo' masterpage='globals.php' />">
+    <link href="http://ee-security.com/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/full-width-pics.css" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="http://ee-security.com/css/full-width-pics.css" rel="stylesheet">
+    <link href="http://ee-security.com/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top"
-            style="background-color: #b17f7f; color:black !important;">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">E&E Electronic Engineering Research, Inc</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home
-        
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="systems.html">Systems and Services <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tech.html">Tech</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="jobsites.html">Job Sites</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://eleding.com/security-safety.html " target="_blank">Purchase</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <cms:embed 'securitynav.html' />
+
         <section class="py-1">
                 <h1 class="mt-4 mb-3">Security Systems and Services
                         <!-- <small>Subheading</small> -->
@@ -64,6 +36,7 @@
                 <br>
             <div class="row">
                 <div class="col-lg-8 mb-4">
+                <cms:editable name='main_content' type='richtext'>
                     <p> EE-Security is a local security vendor, servicing Southern Californian Counties. With custom EESGI security components, combined with Honeywell Monitoring and DSC Security Modules, we can combine the dedication and personal touch of a local business, with the resources and security capabilities of a large corporation. <br><br>Our advanced security system technologies make your security and safety worry-free! With our lines of
                         ePIR®, eVoxBox®, eVoxCon®, and eNaviGuard® products, we strive to be ahead of the competition, and
                         to give YOU peace of mind.</p><br><br>
@@ -76,10 +49,11 @@
                         <a href="https://www.security.honeywell.com/All-Categories/integrated-security">Honeywell Security</a><br><br>
                         <a href="https://www.dsc.com/index.php?n=products&filter=6,7">DSC Security</a><br><br>
                     </div><br><br><br><br>
-                    <div class="row justify-content-center"><a href="https://eleding.com/local-installation.html" class="btn btn-dark btn-lg">Schedule Install</a></div>
+                    <div class="row justify-content-center"><a href="https://eleding.com/local-installation.html" class="btn btn-dark btn-lg">Schedule Install</a></div></cms:editable>
                 </div>
                 <div class="col-lg-4 mb-4">
-                    <img src="./img/poe-ad.jpg" href="https://eleding.com/ee-poe-high-voltage-solar-power-panel-w-optional-wifi-cctv-camera-system.html" target="_blank" alt="ee-poe ad">
+                <cms:editable name='main_photo' type='richtext'>
+                    <img src="http://ee-security.com/img/poe-ad.jpg" href="https://eleding.com/ee-poe-high-voltage-solar-power-panel-w-optional-wifi-cctv-camera-system.html" target="_blank" alt="ee-poe ad"></cms:editable>
                 </div>
             </div>
             
@@ -149,3 +123,5 @@
 </body>
 
 </html>
+
+<?php COUCH::invoke(); ?>

@@ -1,3 +1,9 @@
+<?php require_once( '../development/cms.php' ); ?>
+<cms:template title='Sec Jobsites' order='24' />
+
+<?php require_once( '../development/cms.php' ); ?>
+<cms:template title='Sec Jobsites' order='24' />
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +11,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>E&E Electronic Engineering Research, Inc</title>
+    <title><cms:get_custom_field 'site_title' masterpage='globals.php' /></title>
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="<cms:get_custom_field 'logo' masterpage='globals.php' />">
+
+    <link href="http://ee-security.com/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/full-width-pics.css" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="http://ee-security.com/css/full-width-pics.css" rel="stylesheet">
+    <link href="http://ee-security.com/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
     <style>
             .rig {
@@ -125,40 +133,8 @@
 
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top"
-            style="background-color: #b17f7f; color:black !important;">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">E&E Electronic Engineering Research, Inc</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home
+    <cms:embed 'securitynav.html' />
 
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="systems.html">Systems and Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tech.html">Tech</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="jobsites.html">Job Sites <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://eleding.com/security-safety.html " target="_blank">Purchase</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
         <section class="py-1">
             <h1 class="mt-4 mb-3">Job Sites
                 <!-- <small>Subheading</small> -->
@@ -172,227 +148,181 @@
             </ol>
             <br>
             <div class="row">
+            <cms:editable name='main_content' type='richtext'>
                 <ul class="rig" id="rig">
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C01_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C01_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Santa Anita Car Wash</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C02_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C02_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Garvey Commercial</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C03_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C03_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Asia Village</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C04_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C04_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Custom Home</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C05_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C05_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">China Town Senior Apartment</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C06_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C06_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Super K-Mart</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C08_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C08_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Gold World Plaza</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C09_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C09_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Monterey Park Medical Building</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C10_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C10_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">San Gabriel Square</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C11_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C11_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Grand Plaza</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img//C12_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img//C12_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Sheraton</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C13_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C13_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">World Plaza - China Town</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C14_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C14_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Arcadia Landmark</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C15_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C15_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Barstow Hotel</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C16_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C16_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Mar Center</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C17_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C17_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Industrial Complex</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C18_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C18_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Hoa Binh Super Market</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C19_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C19_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Asia Plaza</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C20_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C20_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Los Angeles Senior Apartment</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/ucla.jpg" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/ucla.jpg" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">UCLA Office Building</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C22_S.gif" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C22_S.gif" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Grand Century - San Jose</span>
                         </a>
                     </li>
                     <li>
                         <a class="rig-cell" href="#">
-                            <img src="./img/C23.jpg" alt="site" class="rig-img" />
+                            <img src="http://ee-security.com/img/C23.jpg" alt="site" class="rig-img" />
                             <span class="rig-overlay"></span>
                             <span class="rig-text">Amphastar</span>
                         </a>
                     </li>
                 
-                </ul>
+                </ul> </cms:editable>
             </div>
         </section>
     </div>
         
     <hr>
-    <footer class="py-2 footer bg-light" style="background-color: #b17f7f; color:black !important;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 h-100 text-center text-md-left my-auto">
-                    <ul class="list-inline mb-2" style="font-size: 0.95rem;">
-                        <li class="list-inline-item">
-                            <a href="https://goo.gl/maps/sYWfPUiwCRckCdjg7"
-                                target="_blank" rel="noopener">12346 Valley Blvd. Suite E,&nbsp;El Monte, CA 91732,
-                                U.S.A</a><br>
-                            <a href="callto:18775793889">877-579-3889</a> | <a
-                                href="mailto:info@eesgi.com">info@eesgi.com</a> | M-F : 10 am - 5 pm PST <br>
-                            <a href="https://eleding.com/privacy-policy-cookie-restriction-mode">Privacy Policy</a> | <a href="https://eesgi.com" target="_blank">Corporate Site</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item mr-3">
-                            <a href="https://www.facebook.com/EE-Systems-Group-107671617281437" target="_blank">
-                                <i class="fab fa-facebook fa-2x fa-fw"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item mr-3">
-                            <a href="https://www.linkedin.com/company/ee-systems-group-inc/" target="_blank">
-                                <i class="fab fa-linkedin fa-2x fa-fw"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.yelp.com/biz/ee-systems-group-inc-el-monte-2">
-                                <i class="fab fa-yelp fa-2x fa-fw"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a
-                                href="https://www.google.com/maps/place//data=!4m3!3m2!1s0x80c2da19868af7eb:0x88d6b5e224e66b07!12e1?source=g.page.default&pli=1">
-                                <i class="fab fa-google fa-2x fa-fw"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.youtube.com/channel/UCsvZVa5bMpbK3mKQOsNtKWA">
-                                <i class="fab fa-youtube fa-2x fa-fw"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="text-muted small mb-4 mb-lg-0" style="padding-left:3%; padding-top:1%">&copy; EESGI 2019.
-                        All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <cms:embed 'securityfooter.html' />
 
       <!-- Contact form JavaScript -->
   <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+  <script src="http://ee-security.com/js/jqBootstrapValidation.js"></script>
+  <script src="http://ee-security.com/js/contact_me.js"></script>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="http://ee-security.com/vendor/jquery/jquery.min.js"></script>
+    <script src="http://ee-security.com/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
+
+<?php COUCH::invoke(); ?>

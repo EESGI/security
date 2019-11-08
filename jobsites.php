@@ -1,7 +1,4 @@
-<?php require_once( '../development/cms.php' ); ?>
-<cms:template title='Sec Jobsites' order='24' />
-
-<?php require_once( '../development/cms.php' ); ?>
+<?php require_once( 'development/cms.php' ); ?>
 <cms:template title='Sec Jobsites' order='24' />
 
 <!DOCTYPE html>

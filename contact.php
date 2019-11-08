@@ -1,8 +1,6 @@
-<?php require_once( '../development/cms.php' ); ?>
-<cms:template title='Sec Contact' order='24' />
-
-<?php require_once( '../development/cms.php' ); ?>
+<?php require_once( 'development/cms.php' ); ?>
 <cms:template title='Sec Contact' order='25' />
+
 <!DOCTYPE html>
 <html lang="en">
 

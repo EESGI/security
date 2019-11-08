@@ -1,4 +1,4 @@
-<?php require_once( '../development/cms.php' ); ?>
+<?php require_once( 'development/cms.php' ); ?>
 <cms:template title='Sec Systems' order='22' />
 
 <!DOCTYPE html>

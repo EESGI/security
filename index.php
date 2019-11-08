@@ -13,7 +13,7 @@
 
   <title><cms:get_custom_field 'site_title' masterpage='globals.php' /></title>
 
-  <link rel="icon" href="<cms:get_custom_field 'logo' masterpage='globals.php' />">
+  <link rel="icon" href="<cms:get_custom_field 'seclogo' masterpage='globals.php' />">
 
   <!-- Bootstrap core CSS -->
   <link href="http://ee-security.com/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
   <cms:embed 'securitynav.html' />
 
   <!-- Header - set the background image for the header in the line below -->
-  <header class="py-5 bg-image-full" style="background-image: url('<cms:get_custom_field 'logo' masterpage='globals.php' />');">
+  <header class="py-5 bg-image-full" style="background-image: url('<cms:get_custom_field 'seclogo' masterpage='globals.php' />');">
     <img class="img-fluid d-block mx-auto" src="https://lh3.googleusercontent.com/-NrZc9IlOrPU/XaT3c_9t8BI/AAAAAAAAABI/zHG7xaX5CyA7dwjXDgCrbPMloopy55pCACLoCGAYYCw/s239-c/profile%2Bpicture" alt="">
   </header>
 

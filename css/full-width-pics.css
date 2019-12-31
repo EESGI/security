@@ -1,8 +1,9 @@
 
 body {
   padding-top: 56px;
-  background-color: #ffe5e5;
-background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+background-image: url("http://www.ee-security.com/img/ee-sec.jpg");
+background-repeat: no-repeat;
+  background-attachment: fixed
 }
 
 .text {
